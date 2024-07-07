@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="management-sys" />
+        <module name="hr-configurations" />
+        <module name="discovery" />
+        <module name="locations" />
+        <module name="vehicle-parameters" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vehicle-info" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
+      <module name="discovery" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="hr-configurations" options="-parameters" />
+      <module name="locations" options="-parameters" />
+      <module name="management-sys" options="-parameters" />
+      <module name="vehicle-info" options="-parameters" />
+      <module name="vehicle-parameters" options="-parameters" />
+    </option>
+  </component>
+</project>
