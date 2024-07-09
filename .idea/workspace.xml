@@ -5,40 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad5973c8-ea3e-484f-9728-9e7637bee9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/CommunityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/controllers/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/controllers/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/controllers/SupplierController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/Auditable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/hrConfigurations/CommonObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/hrConfigurations/EmployeeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/hrConfigurations/JobTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/locations/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/models/locations/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/repositories/ClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/repositories/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/repositories/SupplierRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/services/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/services/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/java/com/naumets/community/services/SupplierService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/community/src/test/java/com/naumets/community/CommunityApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/community-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/finance-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/controllers/InvoiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/models/Auditable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/models/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/models/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/models/locations/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/models/locations/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/repositories/InvoiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/java/com/naumets/finance/services/InvoiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/test/java/com/naumets/finance/controllers/InvoiceControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/finance/src/test/java/com/naumets/finance/services/InvoiceServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c348f2e2-09a0-4fdb-8231-0820663d2810.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c348f2e2-09a0-4fdb-8231-0820663d2810.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,6 +51,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2ihYjOpwhcg6UnoBnkhBCF1Twnc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -89,12 +75,13 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "E:/code/Java/management-system/management-sys/services/community",
+    "last_opened_file_path": "E:/code/Java/management-system/management-sys/services/finance/src/main/java/com/naumets/finance/services",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "db3bfcddfc0026c9d2d2865ddb6cf6c6"
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "spring.configuration.checksum": "e8b725a14349acac14b91a1a628dc469"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -104,13 +91,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\Java\management-system\management-sys\services\finance\src\main\java\com\naumets\finance\services" />
+      <recent name="E:\code\Java\management-system\management-sys\services\finance\src\main\java\com\naumets\finance\repositories" />
+      <recent name="E:\code\Java\management-system\management-sys\services\finance\src\main\java\com\naumets\finance\models" />
+      <recent name="E:\code\Java\management-system\management-sys\services\finance\src\main\java\com\naumets\finance\controllers" />
       <recent name="E:\code\Java\management-system\management-sys\services\community\src\main\java\com\naumets\community\models\hrConfigurations" />
-      <recent name="E:\code\Java\management-system\management-sys\services\community\src\main\java\com\naumets\community\services" />
-      <recent name="E:\code\Java\management-system\management-sys\services\community\src\main\java\com\naumets\community\controllers" />
-      <recent name="E:\code\Java\management-system\management-sys\services\community\src\main\java\com\naumets\community\repositories" />
-      <recent name="E:\code\Java\management-system\management-sys\services\community\src\main\java\com\naumets\community\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\Java\management-system\management-sys\services\finance\src\main\java\com\naumets\finance\controllers" />
       <recent name="E:\code\Java\management-system\management-sys\services\hr-configurations\src\main\java\com\naumets\hrconfigurations\models" />
       <recent name="E:\code\Java\management-system\management-sys\services\vehicle-parameters\src\main\resources\static\js" />
       <recent name="E:\code\Java\management-system\management-sys\services\vehicle-parameters\src\main\resources\static\css" />
@@ -119,10 +107,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.naumets.finance.services" />
+      <recent name="com.naumets.finance.controllers" />
       <recent name="com.naumets.hrconfigurations.services" />
       <recent name="com.naumets.hrconfigurations.controllers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.naumets.finance.models.locations" />
+      <recent name="com.naumets.finance.models" />
       <recent name="com.naumets.community.models" />
     </key>
   </component>
@@ -134,9 +126,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommunityApplication">
-    <configuration name="All in hr-configurations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hr-configurations" />
+  <component name="RunManager" selected="JUnit.All in finance">
+    <configuration name="All in finance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finance" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
@@ -151,25 +143,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in vehicle-parameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="vehicle-parameters" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+    <configuration name="ConfigServerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.naumets.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.naumets.configserver" />
+      <option name="MAIN_CLASS_NAME" value="com.naumets.configserver.ConfigServerApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleParametersApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="vehicle-parameters" />
+    <configuration name="DiscoveryApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="discovery" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.naumets.vehicleparameters.*" />
+          <option name="PATTERN" value="com.naumets.discovery.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.naumets.vehicleparameters" />
-      <option name="MAIN_CLASS_NAME" value="com.naumets.vehicleparameters.VehicleParametersApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.naumets.discovery" />
+      <option name="MAIN_CLASS_NAME" value="com.naumets.discovery.DiscoveryApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com in finance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="finance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,6 +204,13 @@
     <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="discovery" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.naumets.discovery.DiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinanceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="finance" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.naumets.finance.FinanceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,21 +250,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in finance" />
+        <item itemvalue="JUnit.com in finance" />
+        <item itemvalue="JUnit.ConfigServerApplicationTests" />
+        <item itemvalue="JUnit.DiscoveryApplicationTests" />
         <item itemvalue="JUnit.All in locations" />
-        <item itemvalue="JUnit.All in hr-configurations" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="JUnit.VehicleParametersApplicationTests" />
-        <item itemvalue="JUnit.All in vehicle-parameters" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +281,11 @@
       <workItem from="1720347612037" duration="5000" />
       <workItem from="1720374453064" duration="624000" />
       <workItem from="1720432469659" duration="3847000" />
-      <workItem from="1720518261149" duration="5872000" />
+      <workItem from="1720518261149" duration="6185000" />
+      <workItem from="1720540498869" duration="3221000" />
+      <workItem from="1720543796850" duration="369000" />
+      <workItem from="1720544195374" duration="689000" />
+      <workItem from="1720544901051" duration="1595000" />
     </task>
     <servers />
   </component>

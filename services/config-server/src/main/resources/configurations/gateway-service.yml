@@ -21,6 +21,10 @@ spring:
           uri: lb:http://COMMUNITY-SERVICE
           predicates:
             -  Path=/api/community/**
+        - id: finance-service
+          uri: lb:http://FINANCE-SERVICE
+          predicates:
+            - Path=/api/finance/**
 
 server:
   port: 8222

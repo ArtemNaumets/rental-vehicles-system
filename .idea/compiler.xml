@@ -15,6 +15,7 @@
         <module name="vehicle-parameters" />
         <module name="community" />
         <module name="gateway" />
+        <module name="finance" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="community" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery" options="-parameters" />
+      <module name="finance" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="hr-configurations" options="-parameters" />
       <module name="locations" options="-parameters" />
