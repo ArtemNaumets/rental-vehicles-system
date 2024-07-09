@@ -17,10 +17,10 @@ spring:
           uri: lb:http://LOCATIONS-SERVICE
           predicates:
             -  Path=/api/locations/**
-        - id: service1
-          uri: lb://service1
+        - id: community-service
+          uri: lb:http://COMMUNITY-SERVICE
           predicates:
-            -  Path=/service/test/**
+            -  Path=/api/community/**
 
 server:
   port: 8222

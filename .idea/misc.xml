@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/services/vehicle-parameters/pom.xml" />
         <option value="$PROJECT_DIR$/services/hr-configurations/pom.xml" />
         <option value="$PROJECT_DIR$/services/locations/pom.xml" />
+        <option value="$PROJECT_DIR$/services/community/pom.xml" />
       </list>
     </option>
   </component>
