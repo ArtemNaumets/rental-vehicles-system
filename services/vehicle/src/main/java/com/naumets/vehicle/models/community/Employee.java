@@ -1,5 +1,6 @@
 package com.naumets.vehicle.models.community;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.naumets.vehicle.models.hrConfiguration.EmployeeType;
@@ -21,7 +22,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @EqualsAndHashCode(callSuper=false)
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Employee extends Person {
+public class Employee extends Person  {
 		
 	@ManyToOne
 	@JoinColumn(name="employeeTypeId", insertable=false, updatable=false)

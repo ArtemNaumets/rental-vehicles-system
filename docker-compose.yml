@@ -13,3 +13,8 @@ services:
       SPRING_DATABASE_USERNAME: admin
       SPRING_DATABASE_PASSWORD: admin
     restart: no
+
+  redis:
+    image: redis:6.2-alpine
+    ports:
+      - "6379:6379"

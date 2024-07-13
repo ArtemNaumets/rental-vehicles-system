@@ -1,5 +1,6 @@
 package com.naumets.vehicle.models.community;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.naumets.vehicle.models.locations.Country;
@@ -24,7 +25,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @MappedSuperclass
 @ToString
-public class Person {
+public class Person implements Serializable {
 		
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

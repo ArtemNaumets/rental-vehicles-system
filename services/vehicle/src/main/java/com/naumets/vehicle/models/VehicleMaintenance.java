@@ -1,5 +1,6 @@
 package com.naumets.vehicle.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.naumets.vehicle.models.community.Supplier;
@@ -25,7 +26,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class VehicleMaintenance {
+public class VehicleMaintenance implements Serializable {
 		
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

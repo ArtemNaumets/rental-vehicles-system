@@ -8,9 +8,11 @@ import jakarta.persistence.MappedSuperclass;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
+import java.io.Serializable;
+
 @MappedSuperclass
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class CommonObject extends Auditable<String> {
+public class CommonObject extends Auditable<String> implements Serializable {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

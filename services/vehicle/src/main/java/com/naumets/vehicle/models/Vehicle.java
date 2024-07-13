@@ -1,5 +1,6 @@
 package com.naumets.vehicle.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.naumets.vehicle.models.community.Employee;
@@ -16,6 +17,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
+import org.springframework.data.redis.core.RedisHash;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -30,7 +32,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Vehicle {
+public class Vehicle implements Serializable {
 		
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,5 +1,6 @@
 package com.naumets.vehicle.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import com.naumets.vehicle.models.community.Client;
@@ -22,7 +23,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class VehicleHire {
+public class VehicleHire implements Serializable {
 		
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -5,95 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad5973c8-ea3e-484f-9728-9e7637bee9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/vehicle-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/VehicleApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/controllers/VehicleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/controllers/VehicleHireController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/controllers/VehicleMaintenanceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/controllers/VehicleMovementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleHire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleMaintenance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleMovement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Auditable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/hrConfiguration/Auditable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/hrConfiguration/CommonObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/hrConfiguration/EmployeeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/hrConfiguration/JobTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/vehicleParameters/Auditable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/vehicleParameters/CommonObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/vehicleParameters/VehicleMake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/vehicleParameters/VehicleModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/vehicleParameters/VehicleStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/vehicleParameters/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/repositories/VehicleHireRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/repositories/VehicleMaintenanceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/repositories/VehicleMovementRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/repositories/VehicleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleHireService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleMaintenanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleMovementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/VehicleApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/controllers/VehicleControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/controllers/VehicleHireControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/controllers/VehicleMaintenanceControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/controllers/VehicleMovementControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/services/VehicleHireServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/services/VehicleMaintenanceServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/services/VehicleMovementServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/vehicle/src/test/java/com/naumets/vehicle/services/VehicleServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c348f2e2-09a0-4fdb-8231-0820663d2810.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c348f2e2-09a0-4fdb-8231-0820663d2810.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/gateway-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/VehicleManagementServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/controllers/VehicleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/controllers/VehicleHireController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/controllers/VehicleMaintenanceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/controllers/VehicleMovementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/models/VehicleHire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/models/VehicleInformation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/models/VehicleMaintenance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/models/VehicleMovement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/repositories/VehicleHireRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/repositories/VehicleMaintenanceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/repositories/VehicleMovementRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/repositories/VehicleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/services/VehicleHireService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/services/VehicleMaintenanceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/services/VehicleMovementService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/java/com/naumets/vehiclemanagementservice/services/VehicleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/static/js/vehicle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/static/js/vehicleHire.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/static/js/vehicleMaintenance.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/static/js/vehicleMovement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/templates/hire.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/templates/maintenance.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/templates/movement.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/main/resources/templates/vehicle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/vehicle-info/src/test/java/com/naumets/vehiclemanagementservice/VehicleManagementServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/VehicleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/VehicleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/controllers/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/controllers/VehicleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleHire.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleHire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleMaintenance.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleMaintenance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/VehicleMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/community/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/hrConfiguration/CommonObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/hrConfiguration/CommonObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/models/locations/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleHireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleHireService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleMaintenanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleMaintenanceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleMovementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleMovementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/java/com/naumets/vehicle/services/VehicleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -133,33 +64,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "E:/code/Java/management-system/management-sys/services/vehicle/src/test/java/com/naumets/vehicle/services",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "d34e91e4bd58e89a9b3c94dcbf8d76ec"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/code/Java/management-system/management-sys/services/vehicle/src/test/java/com/naumets/vehicle/services&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d34e91e4bd58e89a9b3c94dcbf8d76ec&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\code\Java\management-system\management-sys\services\vehicle\src\test\java\com\naumets\vehicle\services" />
@@ -199,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in vehicle">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="All in vehicle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vehicle" />
       <option name="PACKAGE_NAME" value="" />
@@ -248,21 +179,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.naumets.vehicle.controllers" />
       <option name="MAIN_CLASS_NAME" value="com.naumets.vehicle.controllers.VehicleMaintenanceControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VehicleMovementControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="vehicle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.naumets.vehicle.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.naumets.vehicle.controllers" />
-      <option name="MAIN_CLASS_NAME" value="com.naumets.vehicle.controllers.VehicleMovementControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -338,13 +254,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="JUnit.All in vehicle" />
         <item itemvalue="JUnit.VehicleMaintenanceControllerTest" />
         <item itemvalue="JUnit.VehicleHireControllerTest" />
         <item itemvalue="JUnit.VehicleControllerTest" />
-        <item itemvalue="JUnit.VehicleMovementControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -376,7 +300,8 @@
       <workItem from="1720544901051" duration="1706000" />
       <workItem from="1720643080905" duration="5000" />
       <workItem from="1720706703140" duration="3040000" />
-      <workItem from="1720868222840" duration="3936000" />
+      <workItem from="1720868222840" duration="4172000" />
+      <workItem from="1720883677656" duration="12141000" />
     </task>
     <servers />
   </component>
