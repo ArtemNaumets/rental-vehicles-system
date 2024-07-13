@@ -25,6 +25,10 @@ spring:
           uri: lb:http://FINANCE-SERVICE
           predicates:
             - Path=/api/finance/**
+        - id: vehicle-service
+          uri: lb:http://VEHICLE-SERVICE
+          predicates:
+            - Path=/api/vehicle/**
 
 server:
   port: 8222
