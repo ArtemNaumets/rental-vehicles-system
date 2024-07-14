@@ -3,8 +3,6 @@ package com.naumets.community.controllers;
 import java.util.List;
 import java.util.Optional;
 
-import com.naumets.community.models.locations.Country;
-import com.naumets.community.models.locations.State;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +24,7 @@ public class SupplierController {
 	}
 
 	@GetMapping("/findById/{id}")
-	public ResponseEntity<Optional<Supplier>> findById(@PathVariable Integer id) {
+	public ResponseEntity<Optional<Supplier>> findById(@PathVariable String id) {
 		Optional<Supplier> supplier = supplierService.findById(id);
 		return supplier.isPresent() ? ResponseEntity.ok(supplier) : ResponseEntity.notFound().build();
 	}
@@ -44,7 +42,7 @@ public class SupplierController {
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<Void> delete(@PathVariable Integer id) {
+	public ResponseEntity<Void> delete(@PathVariable String id) {
 		supplierService.delete(id);
 		return ResponseEntity.noContent().build();
 	}

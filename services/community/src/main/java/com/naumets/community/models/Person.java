@@ -1,56 +1,41 @@
 package com.naumets.community.models;
 
-import java.util.Date;
-
-import com.naumets.community.models.locations.Country;
-import com.naumets.community.models.locations.State;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.MappedSuperclass;
-
-import lombok.ToString;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@MappedSuperclass
 @ToString
+@Document(collection = "persons")
 public class Person {
-		
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-	private String firstname;
-	private String lastname;
-	private String othername;
 
-	private String socialSecurityNumber;
-	private String gender;
-	private String maritalStatus;
-	
-	@ManyToOne
-	@JoinColumn(name="countryid", insertable=false, updatable=false)
-	private Country country;
-	private Integer countryid;
-	
-	@ManyToOne
-	@JoinColumn(name="stateid", insertable=false, updatable=false)
-	private State state;
-	private Integer stateid;
-	
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date dateOfBirth;
-	private String city;
-	private String address;
-	private String phone;
-	private String email;
-	private String photo;
+    private String firstname;
+    private String lastname;
+    private String othername;
+
+    private String socialSecurityNumber;
+    private String gender;
+    private String maritalStatus;
+
+    private String countryid;
+
+    private String stateid;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate dateOfBirth;
+
+    private String city;
+    private String address;
+    private String phone;
+    private String email;
 }

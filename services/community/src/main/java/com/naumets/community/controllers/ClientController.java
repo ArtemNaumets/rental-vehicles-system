@@ -3,8 +3,6 @@ package com.naumets.community.controllers;
 import java.util.List;
 import java.util.Optional;
 
-import com.naumets.community.models.locations.Country;
-import com.naumets.community.models.locations.State;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,12 +19,11 @@ public class ClientController {
 
 	@GetMapping("/")
 	public List<Client> findAll() {
-		System.out.println("----------------------------------> ");
 		return clientService.findAll();
 	}
 
 	@GetMapping("/findById/{id}")
-	public Optional<Client> findById(@PathVariable Integer id) {
+	public Optional<Client> findById(@PathVariable String  id) {
 		return clientService.findById(id);
 	}
 
@@ -41,7 +38,7 @@ public class ClientController {
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public void delete(@PathVariable Integer id) {
+	public void delete(@PathVariable String  id) {
 		clientService.delete(id);
 	}
 

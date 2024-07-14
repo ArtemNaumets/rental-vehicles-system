@@ -5,10 +5,6 @@ import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
-import com.naumets.community.models.hrConfigurations.EmployeeType;
-import com.naumets.community.models.hrConfigurations.JobTitle;
-import com.naumets.community.models.locations.Country;
-import com.naumets.community.models.locations.State;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +26,7 @@ public class EmployeeController {
 	}
 
 	@GetMapping("/findById/{id}")
-	public ResponseEntity<Optional<Employee>> findById(@PathVariable Integer id) {
+	public ResponseEntity<Optional<Employee>> findById(@PathVariable String id) {
 		Optional<Employee> employee = employeeService.findById(id);
 		return employee.isPresent() ? ResponseEntity.ok(employee) : ResponseEntity.notFound().build();
 	}
@@ -48,8 +44,8 @@ public class EmployeeController {
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<Void> delete(@PathVariable Integer id) {
-		employeeService.delete(id);
+	public ResponseEntity<Void> delete(@PathVariable String id) {
+		employeeService.deleteById(id);
 		return ResponseEntity.noContent().build();
 	}
 

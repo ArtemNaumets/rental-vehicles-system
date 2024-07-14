@@ -1,42 +1,34 @@
 package com.naumets.community.models;
 
-import java.util.Date;
-
-import com.naumets.community.models.hrConfigurations.EmployeeType;
-import com.naumets.community.models.hrConfigurations.JobTitle;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-
-import lombok.ToString;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
+import java.time.LocalDate;
+
 @Data
 @EqualsAndHashCode(callSuper=false)
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+@Document(collection = "employees")
 public class Employee extends Person {
-		
-	@ManyToOne
-	@JoinColumn(name="employeeTypeId", insertable=false, updatable=false)
-	private EmployeeType employeeType;
-	private Integer employeeTypeId;
-	private String photo;
-	private String username;
-	
-	@ManyToOne
-	@JoinColumn(name="jobTitleId", insertable=false, updatable=false)
-	private JobTitle jobTitle;
-	private Integer jobTitleId;
-	
-	@DateTimeFormat(pattern = "yyyy-MM-dd")	
-	private Date hireDate;
 
+    @Id
+    private String id;
+
+    private String employeeTypeId;
+
+    private String photo;
+    private String username;
+
+    private String jobTitleId;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate hireDate;
 
 }

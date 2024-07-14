@@ -8,28 +8,25 @@ import com.naumets.community.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 @Service
 public class ClientService {
-	
+
 	@Autowired
 	private ClientRepository clientRepository;
-	
-	public List<Client> findAll(){
+
+	public List<Client> findAll() {
 		return clientRepository.findAll();
-	}	
-	
-	public Optional<Client> findById(int id) {
+	}
+
+	public Optional<Client> findById(String id) {
 		return clientRepository.findById(id);
-	}	
-	
-	public void delete(int id) {
+	}
+
+	public void delete(String id) {
 		clientRepository.deleteById(id);
 	}
-	
-	public Client save(Client client) {
-		clientRepository.save(client);
-        return client;
-    }
 
+	public Client save(Client client) {
+		return clientRepository.save(client);
+	}
 }
