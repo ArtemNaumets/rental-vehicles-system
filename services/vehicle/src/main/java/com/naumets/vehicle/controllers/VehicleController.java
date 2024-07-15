@@ -24,7 +24,7 @@ public class VehicleController {
 		return vehicleService.findAll();
 	}
 
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public Optional<Vehicle> findById(@PathVariable Integer id) {
 		return vehicleService.findById(id);
 	}

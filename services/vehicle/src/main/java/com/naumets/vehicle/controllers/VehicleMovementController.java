@@ -23,7 +23,7 @@ public class VehicleMovementController {
 		return vehicleMovementService.findAll();
 	}
 
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public Optional<VehicleMovement> findById(@PathVariable Integer id) {
 		return vehicleMovementService.findById(id);
 	}

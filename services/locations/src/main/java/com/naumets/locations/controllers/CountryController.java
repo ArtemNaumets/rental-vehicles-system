@@ -23,7 +23,7 @@ public class CountryController {
 		return countryService.findAll();
 	}
 
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public Optional<Country> findById(@PathVariable Integer id) {
 		return countryService.findById(id);
 	}

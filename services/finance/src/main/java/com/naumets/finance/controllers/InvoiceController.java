@@ -18,7 +18,6 @@ public class InvoiceController {
 
 	@GetMapping("/")
 	public ResponseEntity<List<Invoice>> findAll() {
-		System.out.println();
 		return ResponseEntity.ok(invoiceService.findAll());
 	}
 

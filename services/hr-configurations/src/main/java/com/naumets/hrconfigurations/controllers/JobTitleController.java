@@ -23,7 +23,7 @@ public class JobTitleController {
 		return jobTitleService.findAll();
 	}
 
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public Optional<JobTitle> findById(@PathVariable Integer id) {
 		return jobTitleService.findById(id);
 	}

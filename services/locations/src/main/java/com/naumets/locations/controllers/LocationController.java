@@ -25,7 +25,7 @@ public class LocationController {
 		return locationService.findAll();
 	}
 
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public Optional<Location> findById(@PathVariable Integer id) {
 		return locationService.findById(id);
 	}

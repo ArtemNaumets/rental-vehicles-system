@@ -23,7 +23,7 @@ public class EmployeeTypeController {
 		return employeeTypeService.findAll();
 	}
 
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public Optional<EmployeeType> findById(@PathVariable Integer id) {
 		return employeeTypeService.findById(id);
 	}

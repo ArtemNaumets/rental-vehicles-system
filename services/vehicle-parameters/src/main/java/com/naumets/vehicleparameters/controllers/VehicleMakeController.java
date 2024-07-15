@@ -23,7 +23,7 @@ public class VehicleMakeController {
 		return new ResponseEntity<>(vehicleMakeService.findAll(), HttpStatus.OK);
 	}	
 	
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public ResponseEntity<Optional<VehicleMake>> findById(@PathVariable Integer id) {
 		return new ResponseEntity<>(vehicleMakeService.findById(id), HttpStatus.OK);
 	}

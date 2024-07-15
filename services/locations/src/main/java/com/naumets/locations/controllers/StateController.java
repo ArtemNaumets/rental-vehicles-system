@@ -23,7 +23,7 @@ public class StateController {
 		return stateService.findAll();
 	}
 
-	@RequestMapping("/findById/{id}")
+	@GetMapping("/findById/{id}")
 	public Optional<State> findById(@PathVariable Integer id) {
 		return stateService.findById(id);
 	}
