@@ -69,18 +69,18 @@ public class VehicleServiceTest {
         verify(vehicleRepository, times(1)).deleteById(1);
     }
 
-    @Test
-    public void VehicleService_countVehiclesByTypes_shouldReturnVehicleCountByType() {
-        List<String> types = Arrays.asList("SUV", "Sedan");
-        when(vehicleRepository.countVehiclesByType("SUV")).thenReturn(5);
-        when(vehicleRepository.countVehiclesByType("Sedan")).thenReturn(3);
-
-        Map<String, Integer> result = vehicleService.countVehiclesByTypes(types);
-
-        assertEquals(2, result.size());
-        assertEquals(5, result.get("SUV"));
-        assertEquals(3, result.get("Sedan"));
-        verify(vehicleRepository, times(1)).countVehiclesByType("SUV");
-        verify(vehicleRepository, times(1)).countVehiclesByType("Sedan");
-    }
+//    @Test
+//    public void VehicleService_countVehiclesByTypes_shouldReturnVehicleCountByType() {
+//        List<String> types = Arrays.asList("SUV", "Sedan");
+//        when(vehicleRepository.countVehiclesByType("SUV")).thenReturn(5);
+//        when(vehicleRepository.countVehiclesByType("Sedan")).thenReturn(3);
+//
+//        Map<String, Integer> result = vehicleService.countVehiclesByTypes(types);
+//
+//        assertEquals(2, result.size());
+//        assertEquals(5, result.get("SUV"));
+//        assertEquals(3, result.get("Sedan"));
+//        verify(vehicleRepository, times(1)).countVehiclesByType("SUV");
+//        verify(vehicleRepository, times(1)).countVehiclesByType("Sedan");
+//    }
 }

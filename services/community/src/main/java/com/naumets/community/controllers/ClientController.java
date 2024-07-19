@@ -3,6 +3,8 @@ package com.naumets.community.controllers;
 import java.util.List;
 import java.util.Optional;
 
+import com.naumets.community.dtos.ClientDTO;
+import com.naumets.community.mappers.ClientMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,8 +25,8 @@ public class ClientController {
 	}
 
 	@GetMapping("/findById/{id}")
-	public Optional<Client> findById(@PathVariable String  id) {
-		return clientService.findById(id);
+	public Optional<ClientDTO> findById(@PathVariable String  id) {
+		return Optional.of(ClientMapper.toDTO(clientService.findById(id).get()));
 	}
 
 	@PostMapping("/add")

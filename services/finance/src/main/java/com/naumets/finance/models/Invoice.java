@@ -32,10 +32,7 @@ public class Invoice {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")	
 	private Date invoiceDate;
 	
-	@ManyToOne
-	@JoinColumn(name="clientid", insertable=false, updatable=false)	
-	private Client client;
-	private Integer clientid;
+	private String clientid;
 	
 	private String remarks;	
 }

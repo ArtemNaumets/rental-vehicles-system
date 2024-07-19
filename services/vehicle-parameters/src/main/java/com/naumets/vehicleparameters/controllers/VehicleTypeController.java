@@ -3,6 +3,8 @@ package com.naumets.vehicleparameters.controllers;
 import java.util.List;
 import java.util.Optional;
 
+import com.naumets.vehicleparameters.dtos.VehicleTypeDTO;
+import com.naumets.vehicleparameters.mappers.VehicleTypeMapper;
 import com.naumets.vehicleparameters.models.VehicleType;
 import com.naumets.vehicleparameters.services.VehicleTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +45,8 @@ public class VehicleTypeController {
 		vehicleTypeService.delete(id);
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
+
+
 
 
 }

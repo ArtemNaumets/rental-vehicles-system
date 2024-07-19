@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Rental Confirmation</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto;">
+  <h2>Rental Confirmation</h2>
+  <p>Dear <span th:text="${clientName}">Client Name</span>,</p>
+
+  <p>Thank you for choosing our service. We are pleased to confirm your vehicle rental. Below are the details of your reservation:</p>
+
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Vehicle Name:</td>
+      <td style="border: 1px solid #ddd; padding: 8px;" th:text="${vehicleName}">Vehicle Name</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Vehicle Number:</td>
+      <td style="border: 1px solid #ddd; padding: 8px;" th:text="${vehicleNumber}">Vehicle Number</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Rental Start Date:</td>
+      <td style="border: 1px solid #ddd; padding: 8px;" th:text="${dateIn}">Date In</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Rental End Date:</td>
+      <td style="border: 1px solid #ddd; padding: 8px;" th:text="${dateOut}">Date Out</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Total Price:</td>
+      <td style="border: 1px solid #ddd; padding: 8px;" th:text="${price}">Price</td>
+    </tr>
+  </table>
+
+  <p>If you have any questions or need further assistance, please do not hesitate to contact us.</p>
+
+  <p>Best regards,</p>
+  <p>Your Rental Company</p>
+
+  <p style="font-size: 0.9em; color: #555;">Please do not reply to this email as it was generated automatically.</p>
+</div>
+</body>
+</html>

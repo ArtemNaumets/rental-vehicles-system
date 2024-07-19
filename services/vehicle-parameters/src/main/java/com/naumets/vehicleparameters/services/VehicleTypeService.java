@@ -3,6 +3,7 @@ package com.naumets.vehicleparameters.services;
 import java.util.List;
 import java.util.Optional;
 
+import com.naumets.vehicleparameters.dtos.VehicleTypeDTO;
 import com.naumets.vehicleparameters.models.VehicleType;
 import com.naumets.vehicleparameters.repositories.VehicleTypeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,5 +32,6 @@ public class VehicleTypeService {
 		vehicleTypeRepository.save(vehicleType);
         return vehicleType;
     }
+
 
 }

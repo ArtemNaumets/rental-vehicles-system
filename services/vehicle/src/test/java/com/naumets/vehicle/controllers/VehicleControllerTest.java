@@ -54,7 +54,7 @@ public class VehicleControllerTest {
         vehicle1.setFuelCapacity("Fuel 1");
         vehicle1.setVehiclestatusid(1);
         vehicle1.setNetWeight("Weight 1");
-        vehicle1.setEmployeeid(1);
+        vehicle1.setEmployeeid(1+"");
         vehicle1.setVehiclemodelid(1);
         vehicle1.setLocationid(1);
         vehicle1.setRemarks("Remarks 1");
@@ -72,7 +72,7 @@ public class VehicleControllerTest {
         vehicle2.setFuelCapacity("Fuel 2");
         vehicle2.setVehiclestatusid(2);
         vehicle2.setNetWeight("Weight 2");
-        vehicle2.setEmployeeid(2);
+        vehicle2.setEmployeeid(2+"");
         vehicle2.setVehiclemodelid(2);
         vehicle2.setLocationid(2);
         vehicle2.setRemarks("Remarks 2");
@@ -117,7 +117,7 @@ public class VehicleControllerTest {
         newVehicle.setFuelCapacity("Fuel 3");
         newVehicle.setVehiclestatusid(3);
         newVehicle.setNetWeight("Weight 3");
-        newVehicle.setEmployeeid(3);
+        newVehicle.setEmployeeid(3+"");
         newVehicle.setVehiclemodelid(3);
         newVehicle.setLocationid(3);
         newVehicle.setRemarks("Remarks 3");
@@ -147,7 +147,7 @@ public class VehicleControllerTest {
         updatedVehicle.setFuelCapacity("Updated Fuel 1");
         updatedVehicle.setVehiclestatusid(1);
         updatedVehicle.setNetWeight("Updated Weight 1");
-        updatedVehicle.setEmployeeid(1);
+        updatedVehicle.setEmployeeid(1+"");
         updatedVehicle.setVehiclemodelid(1);
         updatedVehicle.setLocationid(1);
         updatedVehicle.setRemarks("Updated Remarks 1");

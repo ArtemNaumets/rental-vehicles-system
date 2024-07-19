@@ -3,7 +3,6 @@ package com.naumets.vehicle.models;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.naumets.vehicle.models.community.Supplier;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -46,10 +45,7 @@ public class VehicleMaintenance implements Serializable {
 	
 	private String price;
 	
-	@ManyToOne
-	@JoinColumn(name="supplierid", insertable=false, updatable=false)
-	private Supplier supplier;
-	private Integer supplierid;
+	private String supplierid;
 	
 	private String remarks;
 	

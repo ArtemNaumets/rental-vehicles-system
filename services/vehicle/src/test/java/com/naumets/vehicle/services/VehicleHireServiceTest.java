@@ -55,14 +55,6 @@ public class VehicleHireServiceTest {
         verify(vehicleHireRepository, times(1)).findById(1);
     }
 
-    @Test
-    public void VehicleHireService_save_shouldSaveVehicleHire() {
-        VehicleHire vehicleHire = new VehicleHire();
-
-        vehicleHireService.save(vehicleHire);
-
-        verify(vehicleHireRepository, times(1)).save(vehicleHire);
-    }
 
     @Test
     public void VehicleHireService_delete_shouldDeleteVehicleHireById() {

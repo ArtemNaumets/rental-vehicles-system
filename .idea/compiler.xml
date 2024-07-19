@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
+        <module name="notification" />
         <module name="management-sys" />
         <module name="hr-configurations" />
         <module name="discovery" />
@@ -33,6 +34,7 @@
       <module name="hr-configurations" options="-parameters" />
       <module name="locations" options="-parameters" />
       <module name="management-sys" options="-parameters" />
+      <module name="notification" options="-parameters" />
       <module name="vehicle" options="-parameters" />
       <module name="vehicle-info" options="-parameters" />
       <module name="vehicle-parameters" options="-parameters" />

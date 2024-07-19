@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.naumets.vehicle.controllers.VehicleMovementController;
 import com.naumets.vehicle.models.VehicleMovement;
 import com.naumets.vehicle.models.Vehicle;
-import com.naumets.vehicle.models.locations.Location;
 import com.naumets.vehicle.services.VehicleMovementService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -48,28 +47,16 @@ public class VehicleMovementControllerTest {
         vehicle1.setId(1);
         vehicle1.setName("Vehicle 1");
 
-        Location locationA = new Location();
-        locationA.setId(1);
-        locationA.setDescription("Location A");
-        Location locationB = new Location();
-        locationB.setId(2);
-        locationB.setDescription("Location B");
 
 
-        vehicleMovement1 = new VehicleMovement(1, vehicle1, 1, locationA, 1, new Date(), locationB, 2, new Date(), "Remarks 1");
+        vehicleMovement1 = new VehicleMovement(1, vehicle1, 1, 1, new Date(), 2, new Date(), "Remarks 1");
 
         Vehicle vehicle2 = new Vehicle();
         vehicle2.setId(2);
         vehicle2.setName("Vehicle 2");
 
-        Location locationC = new Location();
-        locationC.setId(3);
-        locationC.setDescription("Location C");
-        Location locationD = new Location();
-        locationD.setId(4);
-        locationD.setDescription("Location D");
 
-        vehicleMovement2 = new VehicleMovement(2, vehicle2, 2, locationC, 3, new Date(), locationD, 4, new Date(), "Remarks 2");
+        vehicleMovement2 = new VehicleMovement(2, vehicle2, 2, 3, new Date(), 4, new Date(), "Remarks 2");
     }
 
     @Test
@@ -82,13 +69,11 @@ public class VehicleMovementControllerTest {
                 .andExpect(jsonPath("$[0].id").value(1))
                 .andExpect(jsonPath("$[0].vehicle.id").value(1))
                 .andExpect(jsonPath("$[0].vehicle.name").value("Vehicle 1"))
-                .andExpect(jsonPath("$[0].location1.id").value(1))
-                .andExpect(jsonPath("$[0].location1.description").value("Location A"))
+                .andExpect(jsonPath("$[0].locationid1").value(1))
                 .andExpect(jsonPath("$[1].id").value(2))
                 .andExpect(jsonPath("$[1].vehicle.id").value(2))
                 .andExpect(jsonPath("$[1].vehicle.name").value("Vehicle 2"))
-                .andExpect(jsonPath("$[1].location1.id").value(3))
-                .andExpect(jsonPath("$[1].location1.description").value("Location C"));
+                .andExpect(jsonPath("$[1].locationid1").value(3));
     }
 
     @Test
@@ -102,8 +87,7 @@ public class VehicleMovementControllerTest {
                 .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.vehicle.id").value(1))
                 .andExpect(jsonPath("$.vehicle.name").value("Vehicle 1"))
-                .andExpect(jsonPath("$.location1.id").value(1))
-                .andExpect(jsonPath("$.location1.description").value("Location A"));
+                .andExpect(jsonPath("$.locationid1").value(1));
     }
 
     @Test
@@ -112,18 +96,12 @@ public class VehicleMovementControllerTest {
         vehicle1.setId(3);
         vehicle1.setName("Vehicle 3");
 
-        Location location1 = new Location();
-        location1.setId(5);
-        location1.setDescription("Location E");
-
-        Location location2 = new Location();
-        location2.setId(6);
-        location2.setDescription("Location F");
 
 
 
 
-        VehicleMovement newVehicleMovement = new VehicleMovement(1, vehicle1, 3, location1, 5, new Date(), location2, 6, new Date(), "New Remarks");
+
+        VehicleMovement newVehicleMovement = new VehicleMovement(1, vehicle1, 3, 5, new Date(), 6, new Date(), "New Remarks");
 
         Mockito.when(vehicleMovementService.save(Mockito.any(VehicleMovement.class))).thenReturn(newVehicleMovement);
 
@@ -132,8 +110,8 @@ public class VehicleMovementControllerTest {
                         .content(objectMapper.writeValueAsString(newVehicleMovement)))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.vehicle.name").value("Vehicle 3"))
-                .andExpect(jsonPath("$.location1.description").value("Location E"))
-                .andExpect(jsonPath("$.location2.description").value("Location F"))
+                .andExpect(jsonPath("$.locationid1").value("5"))
+                .andExpect(jsonPath("$.locationid2").value("6"))
                 .andExpect(jsonPath("$.remarks").value("New Remarks"));
     }
 

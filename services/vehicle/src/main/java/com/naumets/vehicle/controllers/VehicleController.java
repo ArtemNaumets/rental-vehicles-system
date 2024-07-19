@@ -1,6 +1,8 @@
 package com.naumets.vehicle.controllers;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import com.naumets.vehicle.models.Vehicle;
@@ -45,5 +47,12 @@ public class VehicleController {
 		vehicleService.delete(id);
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
+
+//	@GetMapping("/countByTypes")
+//	public Map<String, Integer> countByTypes(){
+//		List<String> types = Arrays.asList("Truck", "Car");
+//		Map<String, Integer> countVehiclesByType = vehicleService.countVehiclesByTypes(types);
+//		return countVehiclesByType;
+//	}
 
 }

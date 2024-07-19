@@ -10,11 +10,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface VehicleRepository extends JpaRepository<Vehicle, Integer>{
 
-    @Query("SELECT COUNT(vi.vehicletypeid) " +
-            "FROM Vehicle vi " +
-            "WHERE vi.vehicletypeid = ( " +
-            "   SELECT vt.id " +
-            "   FROM VehicleType vt " +
-            "   WHERE vt.description = :description)")
-    Integer countVehiclesByType(@Param("description") String description);
+    @Query("SELECT COUNT(v) FROM Vehicle v WHERE v.vehicletypeid = :vehicletypeid")
+    Integer countVehiclesByTypeId(@Param("vehicletypeid") Integer vehicletypeid);
 }

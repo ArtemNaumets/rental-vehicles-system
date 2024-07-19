@@ -3,7 +3,6 @@ package com.naumets.vehicle.models;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.naumets.vehicle.models.locations.Location;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -38,17 +37,11 @@ public class VehicleMovement implements Serializable {
 	private Vehicle vehicle;
 	private int vehicleid;
 	
-	@ManyToOne
-	@JoinColumn(name="locationid1", insertable=false, updatable=false)
-	private Location location1;
 	private int locationid1;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")	
 	private Date date1;
 	
-	@ManyToOne
-	@JoinColumn(name="locationid2", insertable=false, updatable=false)
-	private Location location2;
 	private int locationid2;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")		

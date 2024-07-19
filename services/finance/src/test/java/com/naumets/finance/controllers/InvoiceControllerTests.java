@@ -1,7 +1,6 @@
 package com.naumets.finance.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.naumets.finance.models.Client;
 import com.naumets.finance.models.Invoice;
 import com.naumets.finance.services.InvoiceService;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +9,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
@@ -47,8 +45,8 @@ public class InvoiceControllerTests {
     @Test
     void findAll_shouldReturnListOfInvoices() throws Exception {
         List<Invoice> invoices = Arrays.asList(
-                new Invoice(1, new Date(), new Client(), 1, "Invoice 1"),
-                new Invoice(2, new Date(), new Client(), 2, "Invoice 2")
+                new Invoice(1, new Date(), "1", "Invoice 1"),
+                new Invoice(2, new Date(),  "2", "Invoice 2")
         );
         given(invoiceService.findAll()).willReturn(invoices);
 
@@ -67,7 +65,7 @@ public class InvoiceControllerTests {
 
     @Test
     void findById_shouldReturnInvoiceIfExists() throws Exception {
-        Invoice invoice = new Invoice(1, new Date(), new Client(), 1, "Invoice 1");
+        Invoice invoice = new Invoice(1, new Date(), "2", "Invoice 1");
         given(invoiceService.findById(1)).willReturn(Optional.of(invoice));
 
         mockMvc.perform(get("/api/finance/invoices/findById/1"))
@@ -82,7 +80,7 @@ public class InvoiceControllerTests {
 
     @Test
     void addNew_shouldCreateNewInvoice() throws Exception {
-        Invoice invoice = new Invoice(null, new Date(), new Client(), 1, "New Invoice");
+        Invoice invoice = new Invoice(null, new Date(), "1", "New Invoice");
 
         given(invoiceService.save(any(Invoice.class))).willReturn(invoice);
 
@@ -99,7 +97,7 @@ public class InvoiceControllerTests {
 
     @Test
     void update_shouldUpdateInvoice() throws Exception {
-        Invoice invoice = new Invoice(1, new Date(), new Client(), 1, "Updated Invoice");
+        Invoice invoice = new Invoice(1, new Date(), "1", "Updated Invoice");
 
         given(invoiceService.save(any(Invoice.class))).willReturn(invoice);
 

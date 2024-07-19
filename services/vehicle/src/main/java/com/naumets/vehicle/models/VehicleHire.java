@@ -3,8 +3,6 @@ package com.naumets.vehicle.models;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.naumets.vehicle.models.community.Client;
-import com.naumets.vehicle.models.locations.Location;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -45,14 +43,8 @@ public class VehicleHire implements Serializable {
 	
 	private String timeIn;
 	
-	@ManyToOne
-	@JoinColumn(name="clientid", insertable=false, updatable=false)
-	private Client client;
-	private Integer clientid;
+	private String clientid;
 	
-	@ManyToOne
-	@JoinColumn(name="locationid", insertable=false, updatable=false)
-	private Location location;
 	private Integer locationid;
 	
 	private String price;
