@@ -51,3 +51,13 @@ services:
     ports:
       - 1080:1080
       - 1025:1025
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    environment:
+      KEYCLOAK_ADMIN: kc_admin
+      KEYCLOAK_ADMIN_PASSWORD: kc_admin
+    ports:
+      - "8080:8080"
+    command:
+      - start-dev
