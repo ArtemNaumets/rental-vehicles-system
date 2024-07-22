@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad5973c8-ea3e-484f-9728-9e7637bee9bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/services/gateway/src/main/java/com/naumets/gateway/configs/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c348f2e2-09a0-4fdb-8231-0820663d2810.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c348f2e2-09a0-4fdb-8231-0820663d2810.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/community/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/community/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/discovery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/discovery/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/finance/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/finance/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/hr-configurations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/hr-configurations/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/locations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/locations/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle-parameters/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle-parameters/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/vehicle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/vehicle/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,17 +132,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.zipkin: Compose Deployment">
     <configuration name="All in community" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="community" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in finance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="finance" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
@@ -248,13 +247,26 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zipkin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.keycloak: Compose Deployment" />
         <item itemvalue="JUnit.InvoiceControllerTests" />
         <item itemvalue="JUnit.All in community" />
-        <item itemvalue="JUnit.All in finance" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +317,9 @@
       <workItem from="1721421369114" duration="2738000" />
       <workItem from="1721476233321" duration="8000" />
       <workItem from="1721489335479" duration="6001000" />
-      <workItem from="1721498326407" duration="604000" />
+      <workItem from="1721498326407" duration="1386000" />
+      <workItem from="1721582658198" duration="11000" />
+      <workItem from="1721668435646" duration="1669000" />
     </task>
     <servers />
   </component>
