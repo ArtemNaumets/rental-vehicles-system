@@ -78,7 +78,7 @@ class VehicleStatusControllerTest {
         VehicleStatus vehicleStatus = new VehicleStatus();
         when(vehicleStatusService.save(any(VehicleStatus.class))).thenReturn(vehicleStatus);
 
-        VehicleStatus result = vehicleStatusController.update(vehicleStatus);
+        VehicleStatus result = vehicleStatusController.update(vehicleStatus,1);
 
         assertEquals(vehicleStatus, result);
         verify(vehicleStatusService, times(1)).save(vehicleStatus);

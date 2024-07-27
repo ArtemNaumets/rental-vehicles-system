@@ -34,9 +34,10 @@ public class JobTitleController {
 		return new ResponseEntity<>(savedJobTitle, HttpStatus.CREATED);
 	}
 
-	@PutMapping("/update")
-	public JobTitle update(@RequestBody JobTitle JobTitle) {
-		return jobTitleService.save(JobTitle);
+	@PutMapping("/update/{id}")
+	public JobTitle update(@PathVariable Integer id,@RequestBody JobTitle jobTitle) {
+		jobTitle.setId(id);
+		return jobTitleService.save(jobTitle);
 	}
 
 	@DeleteMapping("/delete/{id}")

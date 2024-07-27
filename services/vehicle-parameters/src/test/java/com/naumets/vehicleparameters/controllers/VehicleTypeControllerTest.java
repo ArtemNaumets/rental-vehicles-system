@@ -68,7 +68,7 @@ public class VehicleTypeControllerTest {
         VehicleType vehicleType = new VehicleType();
         when(vehicleTypeService.save(vehicleType)).thenReturn(vehicleType);
 
-        VehicleType response = vehicleTypeController.update(vehicleType);
+        VehicleType response = vehicleTypeController.update(vehicleType, 1);
 
         assertEquals(vehicleType, response);
     }

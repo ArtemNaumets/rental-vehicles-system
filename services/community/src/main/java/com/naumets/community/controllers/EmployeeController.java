@@ -37,8 +37,9 @@ public class EmployeeController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(savedEmployee);
 	}
 
-	@PutMapping("/update/")
-	public ResponseEntity<Employee> update(@RequestBody Employee employee) {
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Employee> update(@PathVariable String  id,@RequestBody Employee employee) {
+		employee.setId(id);
 		Employee updatedEmployee = employeeService.save(employee);
 		return ResponseEntity.ok(updatedEmployee);
 	}

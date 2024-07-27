@@ -34,8 +34,9 @@ public class StateController {
 		return new ResponseEntity<>(savedState, HttpStatus.CREATED);
 	}
 
-	@PutMapping("/update")
-	public State update(@RequestBody State state) {
+	@PutMapping("/update/{id}")
+	public State update(@PathVariable Integer id,@RequestBody State state) {
+		state.setId(id);
 		return stateService.save(state);
 	}
 

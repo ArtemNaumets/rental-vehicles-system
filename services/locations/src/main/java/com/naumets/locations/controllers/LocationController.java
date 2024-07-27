@@ -36,8 +36,9 @@ public class LocationController {
 		return new ResponseEntity<>(savedLocation, HttpStatus.CREATED);
 	}
 
-	@PutMapping("/update")
-	public Location update(@RequestBody Location location) {
+	@PutMapping("/update/{id}")
+	public Location update(@PathVariable Integer id,@RequestBody Location location) {
+		location.setId(id);
 		return locationService.save(location);
 	}
 

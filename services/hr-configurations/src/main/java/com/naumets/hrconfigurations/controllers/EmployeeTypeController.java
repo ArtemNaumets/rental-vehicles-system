@@ -34,8 +34,9 @@ public class EmployeeTypeController {
 		return new ResponseEntity<>(savedEmployeeType, HttpStatus.CREATED);
 	}
 
-	@PutMapping("/update")
-	public EmployeeType update(@RequestBody EmployeeType employeeType) {
+	@PutMapping("/update/{id}")
+	public EmployeeType update(@PathVariable Integer id,@RequestBody EmployeeType employeeType) {
+		employeeType.setId(id);
 		return employeeTypeService.save(employeeType);
 	}
 

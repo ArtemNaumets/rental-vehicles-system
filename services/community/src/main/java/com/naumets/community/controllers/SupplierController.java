@@ -35,8 +35,9 @@ public class SupplierController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(savedSupplier);
 	}
 
-	@PutMapping("/update/")
-	public ResponseEntity<Supplier> update(@RequestBody Supplier supplier) {
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Supplier> update(@PathVariable String id, @RequestBody Supplier supplier) {
+		supplier.setId(id);
 		Supplier updatedSupplier = supplierService.save(supplier);
 		return ResponseEntity.ok(updatedSupplier);
 	}

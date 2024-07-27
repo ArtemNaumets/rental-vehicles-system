@@ -34,8 +34,9 @@ public class VehicleMaintenanceController {
 		return new ResponseEntity<>(savedVehicle, HttpStatus.CREATED);
 	}
 
-	@PutMapping("/update")
-	public VehicleMaintenance update(@RequestBody VehicleMaintenance vehicleMaintenance) {
+	@PutMapping("/update/{id}")
+	public VehicleMaintenance update(@PathVariable Integer id,@RequestBody VehicleMaintenance vehicleMaintenance) {
+		vehicleMaintenance.setId(id);
 		return vehicleMaintenanceService.save(vehicleMaintenance);
 	}
 

@@ -70,7 +70,7 @@ public class VehicleMakeControllerTest {
         VehicleMake vehicleMake = new VehicleMake();
         when(vehicleMakeService.save(vehicleMake)).thenReturn(vehicleMake);
 
-        ResponseEntity<VehicleMake> response = vehicleMakeController.update(vehicleMake);
+        ResponseEntity<VehicleMake> response = vehicleMakeController.update(vehicleMake, 1);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(vehicleMake, response.getBody());

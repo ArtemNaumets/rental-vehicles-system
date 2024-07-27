@@ -34,8 +34,9 @@ public class CountryController {
 		return new ResponseEntity<>(savedCountry, HttpStatus.CREATED);
 	}
 
-	@PutMapping("/update")
-	public Country update(@RequestBody Country country) {
+	@PutMapping("/update/{id}")
+	public Country update(@PathVariable Integer id,@RequestBody Country country) {
+		country.setId(id);
 		return countryService.save(country);
 	}
 
