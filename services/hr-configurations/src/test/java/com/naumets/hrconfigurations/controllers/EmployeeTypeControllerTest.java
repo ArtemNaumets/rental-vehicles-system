@@ -68,7 +68,7 @@ public class EmployeeTypeControllerTest {
         EmployeeType employeeType = new EmployeeType();
         when(employeeTypeService.save(employeeType)).thenReturn(employeeType);
 
-        EmployeeType response = employeeTypeController.update(employeeType);
+        EmployeeType response = employeeTypeController.update(employeeType.getId(), employeeType);
 
         assertEquals(employeeType, response);
     }

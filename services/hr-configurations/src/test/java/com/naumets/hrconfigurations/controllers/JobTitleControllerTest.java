@@ -68,7 +68,7 @@ public class JobTitleControllerTest {
         JobTitle jobTitle = new JobTitle();
         when(jobTitleService.save(jobTitle)).thenReturn(jobTitle);
 
-        JobTitle response = jobTitleController.update(jobTitle);
+        JobTitle response = jobTitleController.update(jobTitle.getId(),jobTitle);
 
         assertEquals(jobTitle, response);
     }

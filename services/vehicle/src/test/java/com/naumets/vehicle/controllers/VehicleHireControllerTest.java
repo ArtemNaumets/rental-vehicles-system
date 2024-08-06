@@ -114,7 +114,7 @@ public class VehicleHireControllerTest {
 
         Mockito.when(vehicleHireService.save(Mockito.any(VehicleHire.class))).thenReturn(updatedVehicleHire);
 
-        mockMvc.perform(put("/api/vehicle/vehicleHires/update")
+        mockMvc.perform(put("/api/vehicle/vehicleHires/update/1")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(updatedVehicleHire)))
                 .andExpect(status().isOk())

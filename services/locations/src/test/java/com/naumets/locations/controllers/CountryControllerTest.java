@@ -1,3 +1,5 @@
+package com.naumets.locations.controllers;
+
 import com.naumets.locations.controllers.CountryController;
 import com.naumets.locations.models.Country;
 import com.naumets.locations.services.CountryService;
@@ -66,7 +68,7 @@ public class CountryControllerTest {
         Country country = new Country();
         when(countryService.save(country)).thenReturn(country);
 
-        Country response = countryController.update(country);
+        Country response = countryController.update(country.getId(),country);
 
         assertEquals(country, response);
     }

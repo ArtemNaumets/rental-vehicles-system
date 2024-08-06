@@ -154,7 +154,7 @@ public class VehicleControllerTest {
 
         Mockito.when(vehicleService.save(Mockito.any(Vehicle.class))).thenReturn(updatedVehicle);
 
-        mockMvc.perform(put("/api/vehicle/vehicles/update")
+        mockMvc.perform(put("/api/vehicle/vehicles/update/1")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(updatedVehicle)))
                 .andExpect(status().isOk())

@@ -1,3 +1,5 @@
+package com.naumets.locations.controllers;
+
 import com.naumets.locations.controllers.LocationController;
 import com.naumets.locations.models.Location;
 import com.naumets.locations.services.LocationService;
@@ -66,7 +68,7 @@ public class LocationControllerTest {
         Location location = new Location();
         when(locationService.save(location)).thenReturn(location);
 
-        Location response = locationController.update(location);
+        Location response = locationController.update(location.getId(), location);
 
         assertEquals(location, response);
     }

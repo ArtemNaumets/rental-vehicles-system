@@ -1,3 +1,5 @@
+package com.naumets.locations.controllers;
+
 import com.naumets.locations.controllers.StateController;
 import com.naumets.locations.models.State;
 import com.naumets.locations.services.StateService;
@@ -66,7 +68,7 @@ public class StateControllerTest {
         State state = new State();
         when(stateService.save(state)).thenReturn(state);
 
-        State response = stateController.update(state);
+        State response = stateController.update(state.getId(), state);
 
         assertEquals(state, response);
     }
