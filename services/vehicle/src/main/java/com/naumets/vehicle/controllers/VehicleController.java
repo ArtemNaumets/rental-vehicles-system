@@ -49,11 +49,6 @@ public class VehicleController {
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 
-//	@GetMapping("/countByTypes")
-//	public Map<String, Integer> countByTypes(){
-//		List<String> types = Arrays.asList("Truck", "Car");
-//		Map<String, Integer> countVehiclesByType = vehicleService.countVehiclesByTypes(types);
-//		return countVehiclesByType;
-//	}
+
 
 }

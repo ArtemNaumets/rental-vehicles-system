@@ -2,11 +2,8 @@ package com.naumets.locations.models;
 
 import java.util.List;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -19,7 +16,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Country {
 	
 	@Id
@@ -28,6 +24,7 @@ public class Country {
 	private String code;
 	private String description;
 
-	@OneToMany(mappedBy="country")
+	@OneToMany(mappedBy = "country", cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<State> states;
 }
