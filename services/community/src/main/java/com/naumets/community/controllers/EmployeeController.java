@@ -50,11 +50,4 @@ public class EmployeeController {
 		return ResponseEntity.noContent().build();
 	}
 
-
-	@PostMapping("/uploadPhoto")
-	public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file, Principal principal) throws IOException {
-		// User user = userService.findByUsername(principal.getName());
-		// userService.savePhoto(file, user);
-		return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).body("Photo upload functionality not implemented yet.");
-	}
 }
