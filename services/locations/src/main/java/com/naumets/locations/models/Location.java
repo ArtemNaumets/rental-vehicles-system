@@ -13,6 +13,8 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Data
@@ -20,25 +22,27 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Location {
-	
+
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
 	private Integer id;
-	
+
 	private String description;
 	private String details;
-	
+
 	@ManyToOne
-	@JoinColumn(name="countryid", insertable=false, updatable=false)
+	@JoinColumn(name="countryid", insertable = false, updatable = false)
+	@OnDelete(action = OnDeleteAction.SET_NULL)
 	private Country country;
 	private Integer countryid;
-	
+
 	@ManyToOne
-	@JoinColumn(name="stateid", insertable=false, updatable=false)
+	@JoinColumn(name="stateid", insertable = false, updatable = false)
+	@OnDelete(action = OnDeleteAction.SET_NULL)
 	private State state;
 	private Integer stateid;
-		
+
 	private String city;
-	private String address;			
+	private String address;
 }

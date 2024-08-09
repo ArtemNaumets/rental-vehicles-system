@@ -11,6 +11,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -34,6 +36,7 @@ public class VehicleMovement implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="vehicleid", insertable=false, updatable=false)
+	@OnDelete(action = OnDeleteAction.SET_NULL)
 	private Vehicle vehicle;
 	private int vehicleid;
 	
