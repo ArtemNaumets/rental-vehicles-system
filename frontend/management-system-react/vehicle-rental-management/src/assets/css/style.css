@@ -1,0 +1,181 @@
+body {
+    background-color: #F1F1F2;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.dropdown-menu.dropdown-menu-right.show {
+    right: 1px;
+}
+
+.fa {
+    display: revert !important;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.info-box {
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+main {
+    width: 100% !important;
+    flex: 4 !important;
+}
+
+nav {
+    margin-bottom: 0 !important;
+    padding: 20px !important;
+}
+
+#navbarNav {
+    justify-content: end;
+}
+
+a .svg-inline--fa {
+    margin-left: 10px;
+}
+
+.sidebar {
+    position: inherit;
+    flex: 1;
+}
+
+
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+}
+
+.sidebar ul.nav.flex-column li.nav-item {
+    padding: 10px 20px;
+}
+
+.sidebar ul.nav.flex-column li.nav-item a.nav-link {
+    color: #343a40;
+}
+
+.sidebar ul.nav.flex-column li.nav-item a.nav-link:hover {
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+.modal-header {
+    justify-content: space-between;
+}
+
+th {
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: gainsboro !important;
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+tr td:last-child{
+    width: 300px !important;
+}
+
+.modal.show {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .nav-link.dropdown-toggle::after {
+        display: none !important;
+    }
+
+    .sidebar {
+        position: fixed;
+        width: 250px;
+        left: -250px;
+        transition: all 0.3s;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .sidebar-sticky {
+        height: 100vh;
+        padding-top: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        transition: margin-left 0.3s;
+    }
+
+    .main-content.shift {
+        margin-left: 250px;
+    }
+}
