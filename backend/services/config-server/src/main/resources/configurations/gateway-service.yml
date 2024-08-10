@@ -1,0 +1,36 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: vehicle-parameters-service
+          uri: lb:http://VEHICLE-PARAMETERS-SERVICE
+          predicates:
+            -  Path=/api/vehicleParameters/**
+        - id: hr-configurations-service
+          uri: lb:http://HR-CONFIGURATIONS-SERVICE
+          predicates:
+            -  Path=/api/hrConfigurations/**
+        - id: locations-service
+          uri: lb:http://LOCATIONS-SERVICE
+          predicates:
+            -  Path=/api/locations/**
+        - id: community-service
+          uri: lb:http://COMMUNITY-SERVICE
+          predicates:
+            -  Path=/api/community/**
+        - id: finance-service
+          uri: lb:http://FINANCE-SERVICE
+          predicates:
+            - Path=/api/finance/**
+        - id: vehicle-service
+          uri: lb:http://VEHICLE-SERVICE
+          predicates:
+            - Path=/api/vehicle/**
+
+server:
+  port: 8222
+
+
